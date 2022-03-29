@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Employee Payroll</title>
+<script>
+function ok(){
+var a=document.getElementById("text3").value;
+var b=parseInt(a)*10/100;
+document.getElementById("text4").value=b;
+var c=parseInt(a)*5/100;
+document.getElementById("text5").value=c;
+var d=parseInt(a)*5/100;
+document.getElementById("text6").value=d;
+var e=parseInt(b)+parseInt(c)+parseInt(d);
+document.getElementById("text7").value=e;
+var f=parseInt(a)*2/100;
+document.getElementById("text8").value=f;
+var g=parseInt(a)*3/100;
+document.getElementById("text9").value=g;
+var h=parseInt(a)*2/100;
+document.getElementById("text10").value=h;
+var i=parseInt(e)-(parseInt(f)+parseInt(g));
+document.getElementById("text11").value=i;
+}
+</script>
+</head>
+<body>
+<center><div class="title">
+<br><br><br><br>
+Employee Payroll System<br>(Javascript)<br>
+</div><br>
+<div class="content">
+<table>
+<tr><td>EMPLOYEE ID</td><td>:</td><td><input class="text" type="text" id="text1"></td></tr>
+<tr><td>EMPLOYEE NAME</td><td>:</td><td><input class="text" type="text" id="text2"></td></tr>
+<tr><td>SALARY</td><td>:</td><td><input class="text" type="text" id="text3"></td></tr>
+<tr><td>BONUS(10%)</td><td>:</td><td><input class="text" type="text" id="text4"></td></tr>
+<tr><td>INCREMENT(5%)</td><td>:</td><td><input class="text" type="text" id="text5"></td></tr>
+<tr><td>OVERTIME(5%)</td><td>:</td><td><input type="text" class="text" id="text6"></td></tr>
+<tr><td>GROSSPAY</td><td>:</td><td><input class="text" type="text" id="text7"></td></tr>
+<tr><td>LIC(2%)</td><td>:</td><td><input class="text" type="text" id="text8"></td></tr>
+<tr><td>PF(3%)</td><td>:</td><td><input class="text" type="text" id="text9"></td></tr>
+<tr><td>HRA (2%)</td><td>:</td><td><input class="text" type="text" id="text10"></td></tr>
+<tr><td>NETPAY</td><td>:</td><td><input class="text" type="text" id="text11"></td></tr>
+</table><br>
+<input class="button" type="button" value="OK" onClick="ok()">
+</div>
+</body>
+</html>

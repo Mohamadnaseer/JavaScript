@@ -1,0 +1,68 @@
+<html>
+<body>
+<center><br><br>
+<div class="a1">
+<h1>ARITHMETIC OPERATION</h1>
+<h4>Java Script</h4>
+</div>
+<div class="a2"><br><br>
+<table class=a2>
+<tr>
+<td>Number:-</td>
+<td><input type="text" id="text 1"></td></tr>
+<tr><td>Number:-</td>
+<td><input type="text" id="text 2"></td></tr>
+<tr><td>Result:-</td>
+<td><input type="text" id="text 3"></td></tr></table>
+</div>
+<div class="a3"><br>
+<input type="button" value="ADD" onclick="add()">
+<input type="button" value="SUB" onclick="sub()">
+<input type="button" value="MUL" onclick="mul()">
+<input type="button" value="DIV" onclick="div()">
+<input type="button" value="MOD" onclick="mod()">
+</div>
+</center>
+</body>
+<head>
+<title>ARITHMETIC OPERATION</title>
+<script>
+function add()
+{
+var a=document.getElementById("text 1").value;
+var b=document.getElementById("text 2").value;
+var c=parseInt(a)+parseInt(b);
+document.getElementById("text 3").value=c;
+}
+function sub()
+{
+var a=document.getElementById("text 1").value;
+var b=document.getElementById("text 2").value;
+var c=parseInt(a)-parseInt(b);
+document.getElementById("text 3").value=c;
+}
+function mul()
+{
+var a=document.getElementById("text 1").value;
+var b=document.getElementById("text 2").value;
+var c=parseInt(a)*parseInt(b);
+document.getElementById("text 3").value=c;
+}
+function div()
+{
+var a=document.getElementById("text 1").value;
+var b=document.getElementById("text 2").value;
+var c=parseInt(a)/parseInt(b);
+document.getElementById("text 3").value=c;
+}
+function mod()
+{
+var a=document.getElementById("text 1").value;
+var b=document.getElementById("text 2").value;
+var c=parseInt(a)%parseInt(b);
+document.getElementById("text 3").value=c;
+}
+</script>
+</head>
+</html>
+

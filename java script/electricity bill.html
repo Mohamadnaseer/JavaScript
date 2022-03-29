@@ -1,0 +1,57 @@
+ <html>
+<head>
+<title>Electricity Bill</title>
+<style></style>
+<script>
+function calc(){
+	var prev=document.getElementById("pu").value;
+	var curr=document.getElementById("cu").value;
+	var unit=parseInt(prev)-parseInt(curr);
+	document.getElementById("unit").value=unit;
+	var amt_per_unit=document.getElementById("amtperunit").value;
+	var total=parseInt(unit)*parseInt(amt_per_unit);
+	document.getElementById("tot").value="Rs."+total;
+	var gst=document.getElementById("gst").value;
+	var finalamt=(parseInt(total*gst)/100)+parseInt(total);
+	document.getElementById("finamt").value="Rs."+finalamt;
+}
+</script>
+</head>
+<body>
+	<center>
+		<div class="container">
+			<div class="heading">
+				<h1>Electricity Bill</h1>
+				<h4>Javascript</h4>
+			</div>
+			<br>
+			<br>
+			<div class="input">
+				EB-no:
+			 	<input type="text" id="text1" class="textbox"><br><br>
+				Customer Name:
+				<input type="text" id="text2" class="textbox"><br><br>
+				Previous Unit:
+				<input type="text" id="pu" class="textbox"><br><br>
+				Current Unit:
+				<input type="text" id="cu" class="textbox"><br><br>
+				Unit:
+				<input type="text" id="unit" class="textbox"><br><br>
+				Amount-per-unit:
+				<input type="text" id="amtperunit" class="textbox"><br><br>
+				Total:
+				<input type="text" id="tot" class="textbox"><br><br>
+				Gst:
+				<input type="text" id="gst" class="textbox"><br><br>
+				Final Amount:
+				<input type="text" id="finamt" class="textbox"><br><br>
+			</div>
+			<br>
+			
+			<div class="operators">
+				<input type="button" value="Calculate" onClick="calc()" class="btn">
+			</div>
+		</div>
+	</center>
+</body>
+</html>
